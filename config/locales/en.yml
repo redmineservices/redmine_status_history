@@ -1,0 +1,14 @@
+# English strings go here for Rails i18n
+en:
+  # my_label: "My label"
+  
+  label_history_main_search: Search issue changes
+  
+  label_history_status_from: Status from
+  label_history_status_to: Status to
+  label_history_date_from: From
+  label_history_date_to: To
+  label_history_view_history: View history
+  label_history_issue_creation: Creation
+  label_history_current_status: Current status
+  

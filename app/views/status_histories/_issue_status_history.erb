@@ -1,0 +1,26 @@
+<table class="list issues">
+  <tbody>
+    <tr>
+      <td>
+        <%=l(:label_history_issue_creation)%>
+      </td>
+      <td>
+        <%= format_date(issue.created_on)%>
+      </td>
+      <td>
+        <%= first_status(issue)%>
+      </td>
+      <td>
+        <%= issue.author%>
+      </td>
+    </tr>
+    <% issue_status_changes(issue).each do |c| %>
+      <tr>
+        <td></td>
+        <td><%= format_date(c.from)%></td>
+        <td><%= c.status%></td>
+        <td><%= c.user%></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

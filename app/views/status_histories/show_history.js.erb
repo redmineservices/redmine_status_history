@@ -1,0 +1,3 @@
+$('#ajax-modal').html('<%= escape_javascript(render :partial => 'issue_status_history', locals: {issue: @issue}) %>');
+showModal('ajax-modal', '700px');
+$('#ajax-modal').addClass('new-watcher');

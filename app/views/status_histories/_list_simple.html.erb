@@ -1,0 +1,35 @@
+<% if issues && issues.any? %>
+<%= form_tag({}) do %>
+  <table class="list issues">
+    <thead><tr>
+    <th>#</th>
+    <th><%=l(:field_tracker)%></th>
+    <th><%=l(:field_subject)%></th>
+    <th><%=l(:label_history_current_status)%></th>
+    <th></th>
+    
+    </tr></thead>
+    <tbody>
+    <% for issue in issues %>
+    <tr id="issue-<%= h(issue.id) %>" class="hascontextmenu <%= cycle('odd', 'even') %> <%= issue.css_classes %>">
+      <td class="id">
+        <%= link_to(issue.id, issue_path(issue)) %>
+      </td>
+      <td class="tracker"><%= issue.tracker %></td>
+      <td class="subject">
+        <%= link_to(issue.subject.truncate(60), issue_path(issue)) %>
+      </td>
+      <td>
+        <%= issue.status %>
+      </td>
+      <td>
+        <%= link_to l(:label_history_view_history), show_status_history_path(@project, issue), :remote => true %>
+      </td>
+    </tr>
+    <% end %>
+    </tbody>
+  </table>
+<% end %>
+<% else %>
+  <p class="nodata"><%= l(:label_no_data) %></p>
+<% end %>
