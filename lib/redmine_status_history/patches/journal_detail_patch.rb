@@ -32,10 +32,6 @@ module RedmineStatusHistory
             end                          
           end
         end
-        
-        def testADS
-          puts "foo"
-        end
       end            
     end
   end

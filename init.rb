@@ -11,7 +11,7 @@ Redmine::Plugin.register :redmine_status_history do
   description 'This is a plugin for Redmine'
   version '1.0.0'
   url 'http://javiferrer.es'
-  author_url 'http://example.com/about'
+  author_url 'http://twitter.com/javiferrer'
   
   project_module :issue_tracking do
     permission :search_status_history, {}, :require => :member

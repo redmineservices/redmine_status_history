@@ -23,17 +23,13 @@ module RedmineStatusHistory
           }
           IssueStatusHistory.create!(status_history)  
         end  
-        
-        def testADS
-          puts "foo"
-        end    
       end      
     end
   end
 end
 
-#unless Issue.included_modules.include?(RedmineStatusHistory::Patches::IssuePatch)
+unless Issue.included_modules.include?(RedmineStatusHistory::Patches::IssuePatch)
   Issue.send(:include, RedmineStatusHistory::Patches::IssuePatch)
-#end
+end
 
 
