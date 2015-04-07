@@ -1,7 +1,8 @@
 redmine_status_history
 ==============================
 
-This plugin allows users to search over the status changes of a issue
+This plugin allows to search between two dates on the issue status changes over the history of the issues.
+Allow to search specific status changes, ie in progress -> finished
 
 Features
 --------
