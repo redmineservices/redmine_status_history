@@ -1,0 +1,14 @@
+# Turkish strings go here for Rails i18n
+tr:
+  # my_label: "My label"
+  
+  label_history_main_search: Durum değişikliği ara
+  
+  label_history_status_from: Önceki durumu
+  label_history_status_to: Sonraki durumu
+  label_history_date_from: Tarihinden
+  label_history_date_to: Tarihine
+  label_history_view_history: Geçmişini gör
+  label_history_issue_creation: Oluşturulma
+  label_history_current_status: Şimdiki durumu
+
