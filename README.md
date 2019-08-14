@@ -13,7 +13,7 @@ Features
 Compatibility
 -------------
 
-Developed and tested on redmine 4.x
+Developed and tested on redmine 3.x, 4.x
 
 Usage
 -----

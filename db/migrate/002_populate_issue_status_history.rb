@@ -1,4 +1,4 @@
-class PopulateIssueStatusHistory < ActiveRecord::Migration[4.2]
+class PopulateIssueStatusHistory < (Rails.version < '5.2' ? ActiveRecord::Migration : ActiveRecord::Migration[4.2])
   def change
     
     Issue.find_each do |i|
