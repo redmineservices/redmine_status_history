@@ -1,4 +1,4 @@
-class PopulateIssueStatusHistory < ActiveRecord::Migration
+class PopulateIssueStatusHistory < ActiveRecord::Migration[4.2]
   def change
     
     Issue.find_each do |i|

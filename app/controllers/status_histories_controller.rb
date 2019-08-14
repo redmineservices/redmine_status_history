@@ -1,7 +1,7 @@
 class StatusHistoriesController < ApplicationController
   unloadable
   
-  before_filter :find_project_by_project_id
+  before_action :find_project_by_project_id
 
 
   def index

@@ -1,4 +1,4 @@
-class CreateIssueStatusHistories < ActiveRecord::Migration
+class CreateIssueStatusHistories < ActiveRecord::Migration[4.2]
   def change
     create_table :issue_status_histories do |t|
       t.integer :issue_id
