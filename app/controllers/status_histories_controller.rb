@@ -15,9 +15,11 @@ class StatusHistoriesController < ApplicationController
   def search
     @statuses = @project.trackers.collect {|t| t.issue_statuses}.flatten.uniq.sort {|s, t| s.name <=> t.name}
     @status_to = params[:status_to]
-    @date_from = params[:date_from]
-    @status_from = params[:status_from] if params[:status_from].present? 
-    @date_to = params[:date_to] if params[:date_to].present?
+    @status_from = params[:status_from]
+    if params[:dates].present?
+      @date_from = params[:dates][:date_from] 
+      @date_to = params[:dates][:date_to]
+    end
     
     @issues = []
     

@@ -18,18 +18,18 @@ Developed and tested on redmine 4.x
 Usage
 -----
 
-[See wiki] (https://github.com/javiferrer/redmine_status_history/wiki)
+[See wiki] (https://github.com/redmineservices/redmine_status_history/wiki)
 
 Installation
 ------------
 
-* Clone https://github.com/javiferrer/redmine_status_history or download zip into  **redmine_dir/plugins/** folder
+* Clone https://github.com/redmineservices/redmine_status_history or download zip into  **redmine_dir/plugins/** folder
 ```
-$ git clone https://github.com/javiferrer/redmine_status_history.git
+$ git clone https://github.com/redmineservices/redmine_status_history.git
 ```
 * Stop redmine. From redmine root directory, run (it takes a long time if you have a lot of issues): 
 ```
-$ rake redmine:plugins:migrate RAILS_ENV=production
+$ rake redmine:plugins:migrate RAILS_ENV=production PLUGIN_NAME=redmine_status_history
 ```
 * Restart redmine
 
