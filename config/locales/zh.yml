@@ -1,0 +1,14 @@
+# Simplified Chinese strings go here for Rails i18n
+zh:
+  # my_label: "My label"
+  
+  label_history_main_search: 问题状态变更查询
+  
+  label_history_status_from: 状态从
+  label_history_status_to: 变更至
+  label_history_date_from: 日期从
+  label_history_date_to: 至
+  label_history_view_history: 查看状态变更历史
+  label_history_issue_creation: 问题创建
+  label_history_current_status: 当前状态
+  
