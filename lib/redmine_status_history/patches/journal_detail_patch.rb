@@ -36,7 +36,3 @@ module RedmineStatusHistory
     end
   end
 end
-
-unless JournalDetail.included_modules.include?(RedmineStatusHistory::Patches::JournalDetailPatch)
-  JournalDetail.send(:include, RedmineStatusHistory::Patches::JournalDetailPatch)
-end

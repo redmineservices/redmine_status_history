@@ -27,9 +27,3 @@ module RedmineStatusHistory
     end
   end
 end
-
-unless Issue.included_modules.include?(RedmineStatusHistory::Patches::IssuePatch)
-  Issue.send(:include, RedmineStatusHistory::Patches::IssuePatch)
-end
-
-
